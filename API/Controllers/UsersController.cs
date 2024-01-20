@@ -7,10 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using SQLitePCL;
 
 namespace API.Controllers;
-
-[ApiController]
-[Route("api/[controller]")] // /api/users
-public class UsersController : ControllerBase
+public class UsersController : BaseApiController
 {
     private readonly DataContext _context;
 
