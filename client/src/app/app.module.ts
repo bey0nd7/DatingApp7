@@ -10,7 +10,7 @@ import { NavComponent } from './nav/nav.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent    /* added by ng g c nav */
   ],
   imports: [
     BrowserModule,
