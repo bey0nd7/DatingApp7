@@ -1,14 +1,9 @@
-using System.Text;
 using API.Extensions;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-
 builder.Services.AddApplicationServices(builder.Configuration);
-
 builder.Services.AddIdentityServices(builder.Configuration);
 
 WebApplication? app = builder.Build();
