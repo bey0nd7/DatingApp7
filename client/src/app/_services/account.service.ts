@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, map } from 'rxjs';
 import { User } from '../_models/user';
 
-@Injectable({   /* means it can be injected into components or other services */
-  providedIn: 'root' /* means you dont have to add it in app.module.ts in providers */
+@Injectable({
+  providedIn: 'root'
 })
 export class AccountService {
   baseUrl = 'https://localhost:5001/api/';

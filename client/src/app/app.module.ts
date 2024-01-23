@@ -16,7 +16,7 @@ import { RegisterComponent } from './register/register.component';
     AppComponent,
     NavComponent,
     HomeComponent,
-    RegisterComponent    /* added by ng g c nav */
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
