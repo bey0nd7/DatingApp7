@@ -8,6 +8,11 @@ builder.Services.AddIdentityServices(builder.Configuration);
 
 WebApplication? app = builder.Build();
 
+if(builder.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+
 app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
 
 app.UseAuthentication();
