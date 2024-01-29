@@ -1,5 +1,6 @@
 using API;
 using API.Extensions;
+using API.Middleware;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,7 @@ if(builder.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 
+// app.UseMiddleware<EveryMiddleware>();
 app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));

@@ -2,7 +2,7 @@
 using System.Net;
 using System.Text.Json;
 
-namespace API;
+namespace API.Middleware;
 public class ExceptionMiddleware
 {
     readonly RequestDelegate _next;
